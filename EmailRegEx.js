@@ -1,11 +1,11 @@
 let prompt = require("prompt-sync")();
 
-//
-let emailRegex = new RegExp("^abc[._+-]?[a-zA-Z]*@bridgelabz[.]co[.]*[a-z]*$");
-let userInput = prompt("Enter Your email = ");
+//checking with multiple email address 
 
-if (emailRegex.test(userInput)){
-    console.log("You Entered SuccessFully");
+let emialRegex = new RegExp("^abc[-.+]*[0-9]*@[a-z]*[.a-z][.a-z]*")
+let userInput = prompt("enter email id here = ");
+if (emialRegex.test(userInput)){
+    console.log("You Email added Successfully ");
 }else{
-    console.log("You entered  wrong email id ");
+    console.log("you entered  invalid email id ");
 }
