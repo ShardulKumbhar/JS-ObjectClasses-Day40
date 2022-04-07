@@ -1,5 +1,6 @@
 let prompt = require("prompt-sync")();
 
+//created @ as mandatory part
 let emailRegex = new RegExp("^abc[._+-]?[a-zA-Z]*@bridgelabz[.]co[.]*[a-z]*$");
 let userInput = prompt("Enter Your email = ");
 
